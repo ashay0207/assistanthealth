@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background: #F8F8F8;
+    font-family: "Inter", sans-serif;
+}
+h1{
+font-family: 'Open Sans';
+font-size: 48px;
+font-weight: 700;
+line-height: 66px;
+text-align: left;
+}
+h2{
+font-family:  'Open Sans';
+font-size: 36px;
+font-weight: 700;
+line-height: 50px;
+/* text-align: center; */
+}
+h3 {
+    /* font-family: ''; */
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+}
+p{
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}
+header {
+    padding: 13px 0px;
+    background: white;
+}
+img,svg{
+    height: 100%;
+    width: 100%;
+object-fit: contain;
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-col{
+    flex-direction: column;
+}
+.justify-btw{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+a.call {
+    gap: 12px;
+}
+a.call::before {
+    content: '';
+    background-image: url(../img/ic_phone.png);
+    display: block;
+    height: 23px;
+    width: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.primarybtn {
+    color: white;
+    background: #2C9ACB;
+    display: inline-block;
+    max-width: max-content;
+    padding: 12px 45px;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.herosection .primarybtn {
+    margin-top: 13px;
+}
+.herosection {
+    background: url(../img/img-herosection.png) center / cover no-repeat;
+    padding: 175px 0;
+}
+.herosection h1 {
+    color: white;
+    max-width: 575px;
+    letter-spacing: 2px;
+}
+.herosection p {
+    color: white;
+    margin: 15px 0;
+}   
+.how-grid {
+    --auto-grid-min-size: 25rem;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+}
+.carrier-plan{
+    background: white;
+}
+.carrier-plan .container {
+    display: flex;
+    align-items: center;
+}
+
+.carrier-plan .container p {
+    width: 70%;
+    font-size: 14px;
+}
+section.carrier-plan {
+    padding: 25px 0px;
+}
+.carrier-plan .swiper-slide img{
+    height: auto;
+    width: auto;
+}
+section.how {
+    padding: 105px 0;
+}
+.how h2, .aboutus .text h2 ,.testimonal h2{
+    position: relative;
+}
+.how h2::before,.aboutus .text h2::before , .testimonal h2::before{
+       /* margin-top: 30px; */
+       width: 15%;
+       content: " ";
+       background: url(/img/img-vector.png);
+       background-size: contain;
+       background-position: center;
+       background-repeat: no-repeat;
+       position: absolute;
+       bottom: -25px;
+       /* left: 0; */
+       height: 20px;
+}
+.aboutus .text h2::before {
+    bottom: -15px;
+    width: 20%;
+}
+.grid-wrapper {
+    padding-top: 65px;
+}
+
+.grid-card {
+    text-align: left;
+    background: white;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+}
+
+.grid-card h2 {
+    text-align: left;
+}
+.grid-card h3 {
+    margin-top: 5px;
+}
+.grid-card figure {
+    max-width: 75px;
+}
+.aboutus .text, .aboutus figure {
+    width: 48%;
+}
+
+section.aboutus {
+    padding: 90px 0 105px;
+    background: white;
+}
+
+.aboutus .text {padding: 60px 0px;}
+.text p {
+    margin: 20px 0;
+    max-width: 525px;
+}
+
+section.qoute {
+    text-align: center;
+    padding: 85px 0px;
+    background:
+radial-gradient(78.23% 78.23% at 51.15% 42.34%, rgba(44, 154, 203, 0.85) 51.04%, rgba(44, 154, 203, 0.9) 94.27%) ;
+position: relative;
+}
+
+.qoute::before,
+.qoute::after {
+  content: '';
+  position: absolute;
+  width: 230px; /* Adjust width as needed */
+  height: 230px; /* Adjust height as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.qoute::before {
+  top: 0;
+  left: 0;
+  background-image: url('/img/img-left-pattern.png');
+}
+
+.qoute::after {
+  bottom: 0;
+  right: 0;
+  background-image: url('/img/limg-right-pattern.png');
+}
+.qoute h2 {
+    color: white;
+    max-width: 680px;
+    margin:  0 auto;
+}
+
+.qoutebtn {
+    margin-top: 30px;
+    gap:30px
+}
+.whitebtn {
+    background: white;
+    color: #2C9ACB
+}
+.whitebtn:nth-child(2){
+    padding: 12px 77px;
+}
+section.testimonal {
+    padding: 100px 0 25px;
+}
+.swiper-card {
+    justify-content: space-between;
+}
+
+.swiper-card figure, .swiper-card .testimonal {
+    width: 49%;
+}
+
+.swiper-card .testimonal {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 60px  0px  0px 70px;
+}
+
+.test-wrapper {
+    padding: 65px 0px;
+}
+.test-swiper .swiper-wrapper {
+    padding: 0 0 45px;
+}
+
+footer{
+    background: hsl(0, 0%, 13%);
+    color: white;
+    padding: 50px 0 20px;
+}   
+footer .container {
+    gap: 25px;
+}   
+footer p {
+    text-align: center;
+}
+p.address{
+    display: flex;
+    align-items: center;
+}
+p.address::before {
+    content: "";
+    background: url(/img/ic_location.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 25px;
+    width: 35px;
+}
+.copyright {
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px 0;
+    border-top: 1px solid;
+}
+.privacy.flex {
+    gap: 15px;
+}
+
+.line {
+    height: 20px;
+    width: 1px;
+    background: white;
+}
+
+@media screen and (max-width:768px){
+    .how h2::before, .aboutus .text h2::before, .testimonal h2::before{
+        bottom:-10px;
+        width: 15%;
+    }
+    
+    
+    .herosection,section.aboutus,section.how,section.qoute {
+        padding: 50px 0;
+    }
+    .aboutus .container,.aboutus .text  {
+        justify-content:center;
+        text-align:center;
+    }
+    .aboutus .text,.swiper-card .testimonal{
+        padding:30px 0;
+    }
+    .text p{
+        max-width:100%
+    }
+    .aboutus .text, .aboutus figure,.swiper-card figure, .swiper-card .testimonal{
+        width:100%
+    }
+    h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width:426px) {
+    .carrier-plan .container p {
+        width: 100%;
+    }
+    header .container {
+        justify-content: center;
+    }
+    .partner-swiper {
+        width: 100%;
+    }
+    .copyright {
+        justify-content: center;
+        gap: 20px;
+    }
+    h1{
+        font-size: 34px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .how-grid {
+        --auto-grid-min-size: 18rem;
+    }    
+}
