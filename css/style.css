@@ -352,8 +352,9 @@ p.address::before {
         justify-content: center;
         gap: 20px;
     }
-    h1{
-        font-size: 34px;
+     h1 {
+        font-size: 30px;
+        line-height: 40px;
     }
     h2{
         font-size: 30px;
